@@ -1,0 +1,149 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.9886363636363638,
+        "y": 2.88974358974359
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.4629829545454545,
+        "y": 1.4174289772727267
+      },
+      "isLocked": false,
+      "linkedName": "second coral right"
+    },
+    {
+      "anchor": {
+        "x": 1.560961538461538,
+        "y": 0.8566025641025646
+      },
+      "prevControl": {
+        "x": 2.309423436169131,
+        "y": 0.4498297936093075
+      },
+      "nextControl": {
+        "x": 1.1022683566433562,
+        "y": 1.1058923368298363
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.699460227272727,
+        "y": 2.9929403409090907
+      },
+      "prevControl": {
+        "x": 2.856860795454546,
+        "y": 1.876122159090909
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "third coral right"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1,
+      "rotationDegrees": 51.76617482255312
+    }
+  ],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.7707641196013308,
+      "maxWaypointRelativePos": 1.5060908084163906,
+      "constraints": {
+        "maxVelocity": 1.0,
+        "maxAcceleration": 3.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    },
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 1.8807649043869574,
+      "maxWaypointRelativePos": 2.0,
+      "constraints": {
+        "maxVelocity": 3.0,
+        "maxAcceleration": 3.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "",
+      "waypointRelativePos": 0.040494938132728024,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    },
+    {
+      "name": "",
+      "waypointRelativePos": 0.5489313835770417,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Station Pick Up Command"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "L1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "",
+      "waypointRelativePos": 1.9347581552305937,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "L4"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 57.425942865427416
+  },
+  "reversed": false,
+  "folder": "RIGHT 3 Piece Paths",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 57.724355685422424
+  },
+  "useDefaultConstraints": true
+}

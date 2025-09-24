@@ -1,0 +1,66 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.699460227272727,
+        "y": 2.9929403409090907
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.443032347081901,
+        "y": 2.6875660378552926
+      },
+      "isLocked": false,
+      "linkedName": "third coral right"
+    },
+    {
+      "anchor": {
+        "x": 1.4657118055555545,
+        "y": 0.7267361111111108
+      },
+      "prevControl": {
+        "x": 2.4886551404094486,
+        "y": 1.8090960796807005
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "",
+      "waypointRelativePos": 0.0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 53.84181456019167
+  },
+  "reversed": false,
+  "folder": "RIGHT 3 Piece Paths",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 57.425942865427416
+  },
+  "useDefaultConstraints": true
+}

@@ -1,0 +1,77 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.9656410256358647,
+        "y": 5.1912179487179495
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.514545123430708,
+        "y": 4.690825043043537
+      },
+      "isLocked": false,
+      "linkedName": "second real point"
+    },
+    {
+      "anchor": {
+        "x": 1.5914930555555546,
+        "y": 7.379166666666666
+      },
+      "prevControl": {
+        "x": 1.3103536733269385,
+        "y": 7.631695947348135
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "four piece pick up 1"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    },
+    {
+      "name": "",
+      "waypointRelativePos": 0.5559322033898316,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Station Pick Up Command"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -53.880659150520174
+  },
+  "reversed": false,
+  "folder": "4 Piece Straight",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -57.5288077091516
+  },
+  "useDefaultConstraints": true
+}

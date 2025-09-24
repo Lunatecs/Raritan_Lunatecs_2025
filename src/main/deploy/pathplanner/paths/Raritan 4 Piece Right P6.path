@@ -1,0 +1,86 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 4.02385,
+        "y": 3.01626548265156
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.641164606414696,
+        "y": 2.6725474980249837
+      },
+      "isLocked": false,
+      "linkedName": "End P5 - Right 4 Piece"
+    },
+    {
+      "anchor": {
+        "x": 2.36545,
+        "y": 0.7715998147664811
+      },
+      "prevControl": {
+        "x": 3.2386593782025166,
+        "y": 1.6051553220976547
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "End P2 - Right 4 Piece"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.952560890512792,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 1.5,
+        "maxAcceleration": 2.5,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "Elevator Down",
+      "waypointRelativePos": 0.03957795668761221,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    },
+    {
+      "name": "Station Pick Up Command",
+      "waypointRelativePos": 0.6474574309919212,
+      "endWaypointRelativePos": null,
+      "command": null
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 53.91947840434893
+  },
+  "reversed": false,
+  "folder": "Raritan 4 Piece Right",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 59.99999999999999
+  },
+  "useDefaultConstraints": true
+}

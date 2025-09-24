@@ -1,0 +1,96 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.58485,
+        "y": 3.0
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.368346162070282,
+        "y": 2.4727175311038367
+      },
+      "isLocked": false,
+      "linkedName": "End P1 - Right 4 Piece"
+    },
+    {
+      "anchor": {
+        "x": 2.36545,
+        "y": 0.7715998147664811
+      },
+      "prevControl": {
+        "x": 3.238565027578254,
+        "y": 1.2690552862068474
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "End P2 - Right 4 Piece"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.9079879664774961,
+      "rotationDegrees": 52.37595254534035
+    }
+  ],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.8998707851772892,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 2.0,
+        "maxAcceleration": 2.5,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "Elevator Down",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    },
+    {
+      "name": "Station Pick Up Command",
+      "waypointRelativePos": 0.6048095264811489,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Station Pick Up Command"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 53.91947840434893
+  },
+  "reversed": false,
+  "folder": "Raritan 4 Piece Right",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 119.99999999999999
+  },
+  "useDefaultConstraints": true
+}

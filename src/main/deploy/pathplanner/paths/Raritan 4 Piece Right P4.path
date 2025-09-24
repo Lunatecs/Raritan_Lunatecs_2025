@@ -1,0 +1,91 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 4.31285,
+        "y": 2.84753377814042
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.720298638913831,
+        "y": 3.060568615472737
+      },
+      "isLocked": false,
+      "linkedName": "End P3 - Right 4 Piece"
+    },
+    {
+      "anchor": {
+        "x": 2.36545,
+        "y": 0.7715998147664811
+      },
+      "prevControl": {
+        "x": 2.6808058717976913,
+        "y": 1.0854484475292323
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "End P2 - Right 4 Piece"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.8823518325011223,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 2.0,
+        "maxAcceleration": 2.5,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "Elevator Down",
+      "waypointRelativePos": 0.19897636262903945,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    },
+    {
+      "name": "Station Pick Up Command",
+      "waypointRelativePos": 0.6019394496184919,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Station Pick Up Command"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 53.91947840434893
+  },
+  "reversed": false,
+  "folder": "Raritan 4 Piece Right",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 59.99999999999999
+  },
+  "useDefaultConstraints": true
+}

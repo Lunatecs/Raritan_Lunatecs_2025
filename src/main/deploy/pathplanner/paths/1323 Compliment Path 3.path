@@ -1,0 +1,71 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.771730769230769,
+        "y": 4.221089743589744
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.814102564107725,
+        "y": 6.4090384615333
+      },
+      "isLocked": false,
+      "linkedName": "1323 coral 2"
+    },
+    {
+      "anchor": {
+        "x": 1.7157692307743906,
+        "y": 7.296602564097404
+      },
+      "prevControl": {
+        "x": 9.094935897441058,
+        "y": 7.554615384610224
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1,
+      "rotationDegrees": -52.815
+    }
+  ],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -57.84770485893567
+  },
+  "reversed": false,
+  "folder": "1323 Compliement Paths",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -178.86182299251183
+  },
+  "useDefaultConstraints": true
+}

@@ -1,0 +1,136 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.245384615384616,
+        "y": 5.036410256410257
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.8248725936603583,
+        "y": 6.5118597151993685
+      },
+      "isLocked": false,
+      "linkedName": "first real point"
+    },
+    {
+      "anchor": {
+        "x": 1.45173611111111,
+        "y": 7.085677083333334
+      },
+      "prevControl": {
+        "x": 1.9734171097307405,
+        "y": 7.905237887308202
+      },
+      "nextControl": {
+        "x": 0.8836509379751099,
+        "y": 6.193215325183296
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.9656410256358647,
+        "y": 5.1912179487179495
+      },
+      "prevControl": {
+        "x": 3.1305280869084604,
+        "y": 5.389841493112916
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "second real point"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.9122807017543622,
+      "rotationDegrees": -53.9987852510422
+    }
+  ],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 1.7432835820895514,
+      "maxWaypointRelativePos": 2.0,
+      "constraints": {
+        "maxVelocity": 1.5,
+        "maxAcceleration": 3.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "Elevator Down"
+        }
+      }
+    },
+    {
+      "name": "",
+      "waypointRelativePos": 0.6201550387596874,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Station Pick Up Command"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "L2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "",
+      "waypointRelativePos": 1.8328358208955218,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "L4"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -57.5288077091516
+  },
+  "reversed": false,
+  "folder": "4 Piece Optimized",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -119.51149855709028
+  },
+  "useDefaultConstraints": true
+}

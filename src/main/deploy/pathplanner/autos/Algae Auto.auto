@@ -1,0 +1,55 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "One piece"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Score At L4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "go to algae"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Collect Algae L2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "algae to score"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Algae Barge Deliver"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Second algae"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

@@ -1,0 +1,55 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LEFT 3 Piece Path 1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Score At L4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LEFT 3 Piece Path 2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Score At L4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LEFT 3 Piece Path 3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Score At L4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LEFT 3 Piece End Path"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}
