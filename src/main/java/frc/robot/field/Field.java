@@ -26,11 +26,90 @@ public class Field {
     private static HashMap<Integer, ReefPose> redNear = new HashMap<>();
     private static HashMap<Integer, ReefPose> blueFar = new HashMap<>();
     private static HashMap<Integer, ReefPose> redFar = new HashMap<>();
+    private static HashMap<Integer, ReefPose> RoboconRedTags = new HashMap<>();
+    private static HashMap<Integer, ReefPose> RoboconBlueTags = new HashMap<>();
 
     private static Field  field = new Field();
 
 
     private Field(){
+
+         // --- RED TAGS (6–11) ---
+         RoboconRedTags.put(6, new ReefPose(6,
+         new Pose2d(13.5032, 3.0259, Rotation2d.fromDegrees(120)),
+         new Pose2d(13.2172, 2.8608, Rotation2d.fromDegrees(120)),
+         13.360, 2.943));
+
+         RoboconRedTags.put(7, new ReefPose(7,
+         new Pose2d(13.9858, 4.191, Rotation2d.fromDegrees(180)),
+         new Pose2d(13.9858, 3.8608, Rotation2d.fromDegrees(180)),
+         13.986, 4.026));
+
+         RoboconRedTags.put(8, new ReefPose(8,
+         new Pose2d(13.2172, 5.191, Rotation2d.fromDegrees(-120)),
+         new Pose2d(13.5032, 5.0259, Rotation2d.fromDegrees(-120)),
+         13.360, 5.108));
+
+         RoboconRedTags.put(9, new ReefPose(9,
+         new Pose2d(11.967, 5.0259, Rotation2d.fromDegrees(-60)),
+         new Pose2d(12.253, 5.191, Rotation2d.fromDegrees(-60)),
+         12.110, 5.108));
+
+         RoboconRedTags.put(10, new ReefPose(10,
+         new Pose2d(11.4844, 3.8608, Rotation2d.fromDegrees(0)),
+         new Pose2d(11.4844, 4.191, Rotation2d.fromDegrees(0)),
+         11.484, 4.026));
+
+         RoboconRedTags.put(11, new ReefPose(11,
+         new Pose2d(12.253, 2.8608, Rotation2d.fromDegrees(60)),
+         new Pose2d(11.967, 3.0259, Rotation2d.fromDegrees(60)),
+         12.110, 2.943));
+
+
+         // --- BLUE TAGS (17–22) ---
+         RoboconBlueTags.put(17, new ReefPose(17,
+         new Pose2d(4.3308, 2.86, Rotation2d.fromDegrees(60)),
+         new Pose2d(4.0448, 3.026, Rotation2d.fromDegrees(60)),
+         4.188, 2.943));
+
+         RoboconBlueTags.put(18, new ReefPose(18,
+         new Pose2d(3.5628, 3.86, Rotation2d.fromDegrees(0)),
+         new Pose2d(3.5628, 4.191, Rotation2d.fromDegrees(0)),
+         3.563, 4.026));
+
+         RoboconBlueTags.put(19, new ReefPose(19,
+         new Pose2d(4.0448, 5.026, Rotation2d.fromDegrees(-60)),
+         new Pose2d(4.3308, 5.19, Rotation2d.fromDegrees(-60)),
+         4.188, 5.108));
+
+         RoboconBlueTags.put(20, new ReefPose(20,
+         new Pose2d(5.2948, 5.19, Rotation2d.fromDegrees(-120)),
+         new Pose2d(5.5808, 5.026, Rotation2d.fromDegrees(-120)),
+         5.438, 5.108));
+
+         RoboconBlueTags.put(21, new ReefPose(21,
+         new Pose2d(6.0638, 4.191, Rotation2d.fromDegrees(180)),
+         new Pose2d(6.0538, 3.86, Rotation2d.fromDegrees(180)),
+         6.059, 4.026));
+
+         RoboconBlueTags.put(22, new ReefPose(22,
+         new Pose2d(5.5808, 3.026, Rotation2d.fromDegrees(120)),
+         new Pose2d(5.2948, 2.86, Rotation2d.fromDegrees(120)),
+         5.438, 2.943));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         blueNearNew.put(17, new ReefPose(17, 
             new Pose2d(4.08, 3.78, Rotation2d.fromDegrees(-120)), 
@@ -306,9 +385,9 @@ public class Field {
         Alliance color = DriverStation.getAlliance().orElse(Alliance.Blue);
         HashMap<Integer,ReefPose> reefMap = null;
         if(color.equals(Alliance.Blue)) {
-            reefMap = Field.blueNearFinal;
+            reefMap = Field.RoboconBlueTags;
         } else {
-            reefMap = Field.redNearFinal; //Field.redNear;
+            reefMap = Field.RoboconRedTags; //Field.redNear;
         }
 
         Set<Entry<Integer,ReefPose>> values = reefMap.entrySet();
