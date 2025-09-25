@@ -290,7 +290,8 @@ public class RobotContainer {
             .onFalse(new InstantCommand(()-> {liberator.setSpeed(0); coralOutake.setSpeed(0);}, liberator, coralOutake));
         operator.R2().whileTrue(new RunCommand(()-> {liberator.setSpeed(1); coralOutake.setSpeed(1);}, liberator, coralOutake))
             .onFalse(new InstantCommand(()-> {liberator.setSpeed(Constants.DEFAULT_ALGEA_INTAKE); coralOutake.setSpeed(0);}, liberator, coralOutake));
-        
+            driver.povDown().whileTrue(new RunCommand(()-> {liberator.setSpeed(-0.7); coralOutake.setSpeed(0);}, liberator, coralOutake))
+            .onFalse(new InstantCommand(()-> {liberator.setSpeed(0); coralOutake.setSpeed(0);}, liberator, coralOutake));
         //Algae Intake Bindings
         //operator.L2().and(operator.R1()).whileTrue(new RunCommand(()-> {liberator.setSpeed(1); coralOutake.setSpeed(1);}, liberator, coralOutake))
             //.onFalse(new InstantCommand(()-> {liberator.setSpeed(0); coralOutake.setSpeed(0);}, liberator, coralOutake));
