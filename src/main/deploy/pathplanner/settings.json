@@ -7,9 +7,11 @@
     "4 Piece Optimized",
     "4 Piece Straight",
     "LEFT 3 Piece Paths",
-    "Right 4 Piece",
+    "Raritan 4 Piece Right",
     "RIGHT 3 Piece Paths",
-    "Reef Poses"
+    "Raritan 4 Piece Left",
+    "Reef Poses",
+    "Right 4 Piece"
   ],
   "autoFolders": [],
   "defaultMaxVel": 3.0,
