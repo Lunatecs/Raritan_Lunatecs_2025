@@ -37,6 +37,7 @@ import frc.robot.commands.AlgaeFromReefPivotCommand;
 import frc.robot.commands.AlgaeLollipopPivotCommand;
 import frc.robot.commands.AlgaePivotResetCommand;
 import frc.robot.commands.AlignToReefPoseCommand;
+import frc.robot.commands.AutoClimbCommand;
 import frc.robot.commands.AutoDeliverCoralTeleop;
 import frc.robot.commands.BabyBirdFromStationSequentialCommand;
 import frc.robot.commands.BensalemAlgaeClutch;
@@ -216,6 +217,7 @@ public class RobotContainer {
         operator.axisLessThan(0, -0.1).and(operator.touchpad()).onTrue(new ManualClimbCommand(climber, () -> {return operator.getRawAxis(0);}))
                                         .onFalse(new InstantCommand(() -> {climber.setSpeed(0);},climber));
 
+        operator.touchpad().and(operator.povUp()).onTrue(new AutoClimbCommand(climber));
         //Climber MANUAL Servo Commands    
         //operator.axisGreaterThan(2, 0.5).onTrue(new InstantCommand(() -> {chuteServo.releaseChute();}));
         //operator.axisLessThan(2, -0.5).onTrue(new InstantCommand(() -> {chuteServo.setChute();}));
