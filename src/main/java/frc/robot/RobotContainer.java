@@ -217,7 +217,7 @@ public class RobotContainer {
         operator.axisLessThan(0, -0.1).and(operator.touchpad()).onTrue(new ManualClimbCommand(climber, () -> {return operator.getRawAxis(0);}))
                                         .onFalse(new InstantCommand(() -> {climber.setSpeed(0);},climber));
 
-        operator.touchpad().and(operator.povUp()).onTrue(new AutoClimbCommand(climber));
+        operator.touchpad().and(operator.axisLessThan(1, -0.5)).onTrue(new AutoClimbCommand(climber));
         //Climber MANUAL Servo Commands    
         //operator.axisGreaterThan(2, 0.5).onTrue(new InstantCommand(() -> {chuteServo.releaseChute();}));
         //operator.axisLessThan(2, -0.5).onTrue(new InstantCommand(() -> {chuteServo.setChute();}));

@@ -16,9 +16,9 @@ public class AutoClimbCommand extends Command {
   public AutoClimbCommand(ClimberSubSystem climber) {
     this.climber=climber;
     addRequirements(climber);
-    controller = new PIDController(0.008, 0, 0); //UNTUNED
+    controller = new PIDController(0.012, 0, 0); //UNTUNED
     controller.setSetpoint(-95); //DON'T KNOW THE VALUE OF THIS
-    controller.setTolerance(2); //DON'T KNOW THIS EITHER
+    controller.setTolerance(1); //DON'T KNOW THIS EITHER
 
 
     // Use addRequirements() here to declare subsystem dependencies.
