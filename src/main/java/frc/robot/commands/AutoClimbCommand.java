@@ -16,7 +16,7 @@ public class AutoClimbCommand extends Command {
   public AutoClimbCommand(ClimberSubSystem climber) {
     this.climber=climber;
     addRequirements(climber);
-    controller = new PIDController(0.012, 0, 0); //UNTUNED
+    controller = new PIDController(0.07, 0, 0); //UNTUNED
     controller.setSetpoint(-95); //DON'T KNOW THE VALUE OF THIS
     controller.setTolerance(1); //DON'T KNOW THIS EITHER
 
@@ -31,11 +31,16 @@ public class AutoClimbCommand extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
+    if (climber.getEncoder() < -95){
+      climber.setSpeed(0);
+    }
+    else{
     double speed = controller.calculate(climber.getEncoder());
     if(Math.abs(speed)> 0.5){
       speed = Math.signum(speed) * 0.5;
     }
     climber.setSpeed(speed);
+    }
 
   }
 
