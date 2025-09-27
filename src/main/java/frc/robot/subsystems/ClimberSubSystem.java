@@ -24,7 +24,7 @@ public class ClimberSubSystem extends SubsystemBase {
     //motor2 = new TalonFX(Constants.ClimberSubSystemConstants.CAN_ID_CLIMBER);
     //motor2.setNeutralMode(NeutralModeValue.Brake);
     motor1.setPosition(0);
-    //motor2.setControl(new Follower(motor1.getDeviceID(), true));
+        //motor2.setControl(new Follower(motor1.getDeviceID(), true));
   }
 
   public void setSpeed(double speed) {
