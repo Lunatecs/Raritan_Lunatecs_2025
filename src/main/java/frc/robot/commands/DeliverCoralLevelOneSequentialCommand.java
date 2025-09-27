@@ -24,7 +24,7 @@ public class DeliverCoralLevelOneSequentialCommand extends ParallelDeadlineGroup
     // addCommands(new FooCommand(), new BarCommand());
       new SequentialCommandGroup(
       new CoralLevelOnePivotCommandEndable(pivot),
-      new InstantCommand(()-> {roller.setSpeed(0.75);}, roller
+      new InstantCommand(()-> {roller.setSpeed(0.33);}, roller
       )
     )
     );

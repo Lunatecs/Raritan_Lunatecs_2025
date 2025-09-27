@@ -21,7 +21,7 @@ public class ResetBabyBirdCommand extends ParallelCommandGroup {
     // addCommands().
     addCommands(
       new AlgaePivotResetCommand(pivot),
-      new InstantCommand(()-> {roller.setSpeed(0.75);}, roller)
+      new InstantCommand(()-> {roller.setSpeed(0);}, roller)
     );
     // addCommands(new FooCommand(), new BarCommand());
   }
