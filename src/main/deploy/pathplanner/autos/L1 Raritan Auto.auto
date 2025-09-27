@@ -13,7 +13,7 @@
         {
           "type": "named",
           "data": {
-            "name": null
+            "name": "Deliver Coral at L1 Command"
           }
         },
         {
@@ -26,6 +26,42 @@
           "type": "named",
           "data": {
             "name": "Get Baby Bird L1 Command"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L1 Auto P3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Deliver Coral at L1 Command"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L1 Auto P4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Get Baby Bird L1 Command"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "L1 Auto P5"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Deliver Coral at L1 Command"
           }
         }
       ]

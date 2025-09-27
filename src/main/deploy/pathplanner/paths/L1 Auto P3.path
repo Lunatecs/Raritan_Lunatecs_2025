@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 7.14,
-        "y": 3.0
+        "x": 2.300576989991324,
+        "y": 0.7123555047171454
       },
       "prevControl": null,
       "nextControl": {
-        "x": 6.061167916458582,
-        "y": 2.8388579105989398
+        "x": 2.8247551859644204,
+        "y": 1.2384645636631253
       },
       "isLocked": false,
-      "linkedName": "Raritan 4 Piece Right Start Point"
+      "linkedName": "L1 Station Point"
     },
     {
       "anchor": {
-        "x": 5.442552812869285,
-        "y": 2.8885467892963574
+        "x": 4.084388063063975,
+        "y": 2.889344658421479
       },
       "prevControl": {
-        "x": 6.589534554563956,
-        "y": 2.940233021614046
+        "x": 2.3120065777678955,
+        "y": 2.0252086486531145
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "L1 End P1"
+      "linkedName": "L1 Auto End P3"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 119.99999999999999
+    "rotation": 61.58954433437199
   },
   "reversed": false,
   "folder": "L1 Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": -124.90528224449763
   },
   "useDefaultConstraints": true
 }

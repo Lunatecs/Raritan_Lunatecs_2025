@@ -130,6 +130,7 @@ public class RobotContainer {
         NamedCommands.registerCommand("Algae Elevator Down", new NewAlageDown(pivot, elevator, liberator, coralOutake));
         NamedCommands.registerCommand("Algae Barge Deliver", new DeliverAlgaeBargeCommand(new ElevatorLevelFourCommand(elevator), elevator, liberator, 71)); //Shoot at height needs to be adjusted
         NamedCommands.registerCommand("Get Baby Bird L1 Command", new GetCoralBabyBirdFromStationCommand(liberator, elevator));
+        NamedCommands.registerCommand("Deliver Coral at L1 Command", new DeliverCoralLevelOneSequentialCommand(pivot, liberator));
         NamedCommands.registerCommand("L4 Check", new ConditionalCommand(
             new ElevatorLevelFourCommand(elevator),
             new GetCoralSubstationCommand(elevator, coralOutake, coralCarriage),
@@ -240,7 +241,8 @@ public class RobotContainer {
         //driver.povLeft().onTrue(new CoralLevelOnePivotCommand(pivot));
         driver.povLeft().onTrue(new DeliverCoralLevelOneSequentialCommand(pivot, liberator));
 
-        driver.povRight().onTrue(new CoralFromGroundPivotCommand(pivot));
+        //driver.povRight().onTrue(new CoralFromGroundPivotCommand(pivot));
+        driver.povRight().onTrue(new GetCoralBabyBirdFromStationCommand(liberator, elevator));
 
         // OPERATOR CONTROLS
         // Coral Elevator Bindings

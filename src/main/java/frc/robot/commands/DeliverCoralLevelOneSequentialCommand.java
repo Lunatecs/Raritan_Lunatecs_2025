@@ -19,7 +19,7 @@ public class DeliverCoralLevelOneSequentialCommand extends ParallelDeadlineGroup
   /** Creates a new DeliverCoralL1SequentialCommand. */
   public DeliverCoralLevelOneSequentialCommand(AlgaePivotSubSystem pivot, AlgaeLiberatorSubSystem roller) {
     
-    super(new WaitCommand(2),
+    super(new WaitCommand(1.5),
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
       new SequentialCommandGroup(
