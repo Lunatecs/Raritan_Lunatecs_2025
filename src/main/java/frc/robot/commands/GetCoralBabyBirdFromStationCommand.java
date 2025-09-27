@@ -19,7 +19,7 @@ public class GetCoralBabyBirdFromStationCommand extends ParallelDeadlineGroup {
     // Add the deadline command in the super() call. Add other commands using
     // addCommands().
     super(new HasCoralLevelOne(roller),
-    new ElevatorBabyBirdCommand(elevator),
+    //new ElevatorBabyBirdCommand(elevator),
     new RunCommand(()-> {roller.setSpeed(-0.4);}, roller)
     );
     // addCommands(new FooCommand(), new BarCommand());

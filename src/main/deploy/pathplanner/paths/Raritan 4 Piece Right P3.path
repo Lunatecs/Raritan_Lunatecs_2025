@@ -96,7 +96,7 @@
   "folder": "Raritan 4 Piece Right",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 53.91947840434893
+    "rotation": -124.90528224449763
   },
   "useDefaultConstraints": true
 }

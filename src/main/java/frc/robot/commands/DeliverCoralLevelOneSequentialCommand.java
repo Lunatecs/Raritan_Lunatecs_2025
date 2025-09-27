@@ -5,22 +5,28 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.InstantCommand;
+import edu.wpi.first.wpilibj2.command.ParallelDeadlineGroup;
 import edu.wpi.first.wpilibj2.command.RunCommand;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
+import edu.wpi.first.wpilibj2.command.WaitCommand;
 import frc.robot.subsystems.AlgaeLiberatorSubSystem;
 import frc.robot.subsystems.AlgaePivotSubSystem;
 
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
 // information, see:
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
-public class DeliverCoralLevelOneSequentialCommand extends SequentialCommandGroup {
+public class DeliverCoralLevelOneSequentialCommand extends ParallelDeadlineGroup {
   /** Creates a new DeliverCoralL1SequentialCommand. */
   public DeliverCoralLevelOneSequentialCommand(AlgaePivotSubSystem pivot, AlgaeLiberatorSubSystem roller) {
+    
+    super(new WaitCommand(2),
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
-    addCommands(
+      new SequentialCommandGroup(
       new CoralLevelOnePivotCommandEndable(pivot),
-      new InstantCommand(()-> {roller.setSpeed(0.75);}, roller)
+      new InstantCommand(()-> {roller.setSpeed(0.75);}, roller
+      )
+    )
     );
   }
 }
