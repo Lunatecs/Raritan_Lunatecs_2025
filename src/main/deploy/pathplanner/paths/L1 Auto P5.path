@@ -9,19 +9,19 @@
       "prevControl": null,
       "nextControl": {
         "x": 2.8305690858221197,
-        "y": 1.693534087579321
+        "y": 1.6935340875793212
       },
       "isLocked": false,
       "linkedName": "L1 Station Point"
     },
     {
       "anchor": {
-        "x": 3.8896711553846086,
-        "y": 2.9787631443568636
+        "x": 3.869240203711349,
+        "y": 2.9200721386952093
       },
       "prevControl": {
-        "x": 2.1644916167231143,
-        "y": 1.8663596388000658
+        "x": 2.1440606650498544,
+        "y": 1.8076686331384115
       },
       "nextControl": null,
       "isLocked": false,
@@ -31,19 +31,7 @@
   "rotationTargets": [],
   "constraintZones": [],
   "pointTowardsZones": [],
-  "eventMarkers": [
-    {
-      "name": "",
-      "waypointRelativePos": 0,
-      "endWaypointRelativePos": null,
-      "command": {
-        "type": "named",
-        "data": {
-          "name": "Reset Baby Bird Command"
-        }
-      }
-    }
-  ],
+  "eventMarkers": [],
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,

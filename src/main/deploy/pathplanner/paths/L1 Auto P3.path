@@ -16,12 +16,12 @@
     },
     {
       "anchor": {
-        "x": 4.084388063063975,
-        "y": 2.889344658421479
+        "x": 4.06620809825811,
+        "y": 2.817617567075157
       },
       "prevControl": {
-        "x": 2.3120065777678955,
-        "y": 2.0252086486531145
+        "x": 2.29382661296203,
+        "y": 1.9534815573067923
       },
       "nextControl": null,
       "isLocked": false,
@@ -31,19 +31,7 @@
   "rotationTargets": [],
   "constraintZones": [],
   "pointTowardsZones": [],
-  "eventMarkers": [
-    {
-      "name": "",
-      "waypointRelativePos": 0,
-      "endWaypointRelativePos": null,
-      "command": {
-        "type": "named",
-        "data": {
-          "name": "Reset Baby Bird Command"
-        }
-      }
-    }
-  ],
+  "eventMarkers": [],
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,
