@@ -8,24 +8,24 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.797679951793471,
-        "y": 5.8549867051051665
+        "x": 3.8060357152896027,
+        "y": 5.79461817341339
       },
       "isLocked": false,
       "linkedName": "End P3 - Left 4 Piece"
     },
     {
       "anchor": {
-        "x": 2.441322076320648,
-        "y": 7.418600690364838
+        "x": 2.524,
+        "y": 7.379166666666666
       },
       "prevControl": {
-        "x": 2.884518622699683,
-        "y": 7.741402372992707
+        "x": 3.0678101270423346,
+        "y": 7.809314009699836
       },
       "nextControl": {
-        "x": 2.1238093941386094,
-        "y": 7.18734070221413
+        "x": 2.2323024932861415,
+        "y": 7.148437407973405
       },
       "isLocked": false,
       "linkedName": "End P2 - Left 4 Piece"
@@ -36,8 +36,8 @@
         "y": 5.037116477272727
       },
       "prevControl": {
-        "x": 2.7229252080401265,
-        "y": 6.680353658113002
+        "x": 2.5681726010690413,
+        "y": 6.525453026306987
       },
       "nextControl": null,
       "isLocked": false,
@@ -53,10 +53,10 @@
   "constraintZones": [
     {
       "name": "Constraints Zone",
-      "minWaypointRelativePos": 0.6337215057791092,
-      "maxWaypointRelativePos": 1.4739184235873288,
+      "minWaypointRelativePos": 0.7110331496147261,
+      "maxWaypointRelativePos": 1.380453365796233,
       "constraints": {
-        "maxVelocity": 1.5,
+        "maxVelocity": 1.75,
         "maxAcceleration": 1.5,
         "maxAngularVelocity": 540.0,
         "maxAngularAcceleration": 720.0,
