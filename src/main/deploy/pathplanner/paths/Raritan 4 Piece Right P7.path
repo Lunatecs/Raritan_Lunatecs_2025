@@ -16,12 +16,12 @@
     },
     {
       "anchor": {
-        "x": 5.29885,
-        "y": 2.838743044200696
+        "x": 5.247647094726562,
+        "y": 2.8481158392769954
       },
       "prevControl": {
-        "x": 5.006811986529902,
-        "y": 2.611447767280924
+        "x": 4.955609081256465,
+        "y": 2.6208205623572236
       },
       "nextControl": null,
       "isLocked": false,
@@ -33,7 +33,7 @@
     {
       "name": "Constraints Zone",
       "minWaypointRelativePos": 0.0,
-      "maxWaypointRelativePos": 0.10277350438784245,
+      "maxWaypointRelativePos": 0.05008725766782408,
       "constraints": {
         "maxVelocity": 1.5,
         "maxAcceleration": 2.0,
@@ -69,20 +69,20 @@
       }
     },
     {
-      "name": "L4 Check",
-      "waypointRelativePos": 0.8289876009874326,
+      "name": "L4",
+      "waypointRelativePos": 0.8828740368150687,
       "endWaypointRelativePos": null,
       "command": {
         "type": "named",
         "data": {
-          "name": "L4 Check"
+          "name": "L4"
         }
       }
     }
   ],
   "globalConstraints": {
-    "maxVelocity": 3.0,
-    "maxAcceleration": 3.0,
+    "maxVelocity": 4.75,
+    "maxAcceleration": 4.75,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
     "nominalVoltage": 12.0,
@@ -96,7 +96,7 @@
   "folder": "Raritan 4 Piece Right",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -124.90528224449763
+    "rotation": 52.892909236773946
   },
-  "useDefaultConstraints": true
+  "useDefaultConstraints": false
 }

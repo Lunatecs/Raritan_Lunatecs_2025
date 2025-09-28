@@ -33,7 +33,7 @@
     {
       "name": "Constraints Zone",
       "minWaypointRelativePos": 0.0,
-      "maxWaypointRelativePos": 0.2684806125168311,
+      "maxWaypointRelativePos": 0.13707509498073636,
       "constraints": {
         "maxVelocity": 1.5,
         "maxAcceleration": 2.0,
@@ -69,20 +69,20 @@
       }
     },
     {
-      "name": "L4 Check",
-      "waypointRelativePos": 0.8481633787309245,
+      "name": "L4",
+      "waypointRelativePos": 0.9006708850599318,
       "endWaypointRelativePos": null,
       "command": {
         "type": "named",
         "data": {
-          "name": "L4 Check"
+          "name": "L4"
         }
       }
     }
   ],
   "globalConstraints": {
-    "maxVelocity": 3.0,
-    "maxAcceleration": 3.0,
+    "maxVelocity": 4.75,
+    "maxAcceleration": 4.75,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
     "nominalVoltage": 12.0,
@@ -96,7 +96,7 @@
   "folder": "Raritan 4 Piece Right",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -124.90528224449763
+    "rotation": 52.892909236773946
   },
-  "useDefaultConstraints": true
+  "useDefaultConstraints": false
 }

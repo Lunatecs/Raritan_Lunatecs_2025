@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 4.295,
-        "y": 5.18
+        "x": 4.28985,
+        "y": 5.1912179487179495
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.9320611737380653,
-        "y": 5.633062498184431
+        "x": 3.9269111737380658,
+        "y": 5.644280446902381
       },
       "isLocked": false,
       "linkedName": "End P3 - Left 4 Piece"
@@ -45,7 +45,7 @@
     },
     {
       "name": "",
-      "waypointRelativePos": 0.5559322033898316,
+      "waypointRelativePos": 0.5278624652183216,
       "endWaypointRelativePos": null,
       "command": {
         "type": "named",
@@ -56,8 +56,8 @@
     }
   ],
   "globalConstraints": {
-    "maxVelocity": 3.0,
-    "maxAcceleration": 3.0,
+    "maxVelocity": 4.75,
+    "maxAcceleration": 4.75,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
     "nominalVoltage": 12.0,
@@ -73,5 +73,5 @@
     "velocity": 0,
     "rotation": -57.5288077091516
   },
-  "useDefaultConstraints": true
+  "useDefaultConstraints": false
 }
